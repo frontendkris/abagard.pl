@@ -1,0 +1,28 @@
+---
+import { links } from "../../libs/SiteLinks.astro";
+import NavIcons from "./NavIcons.astro";
+import json from "../../libs/contact.json"
+import Mail from "../icons/Mail.astro";
+import Call from "../icons/Call.astro";
+---
+<ul class="menu p-4 overflow-y-auto min-w-80 max-w-max text-base-100 bg-black">
+  {
+    links.map(item =>
+      <li>
+        <a
+          href={item.link}
+          class="block normal-case font-medium text-lg xl:text-xl hover:underline max-w-max"
+          onclick="document.querySelector('.js-nav-btn').click()"
+        >
+          {item.title}
+        </a>
+      </li>
+    )
+  }
+  <NavIcons class="my-4 gap-1 lg:hidden" />
+  <div class="hidden lg:flex flex-col gap-4 px-4 mt-10 text-sm">
+    <h2 class="text-xl">Kontakt</h2>
+    <div class="flex gap-2 items-center justify-start normal-case font-medium max-w-max hover:underline"><Call /><a href={`tel:${json.phone}`} set:text={json.phone}></a></div>
+    <div class="flex gap-2 items-center justify-start normal-case font-medium max-w-max hover:underline"><Mail /><a href={`mailto:${json.email}`} set:text={json.email}></a></div>
+  </div>
+</ul>

@@ -1,0 +1,19 @@
+---
+import { links } from "../../libs/SiteLinks.astro";
+---
+<div class="
+  hidden lg:flex flex-wrap justify-start items-center
+  w-full gap-4 mt-10
+  bg-transparent
+">
+  {
+    links.map(item =>
+      <a
+        href={item.link}
+        class="block w-full md:w-auto md:inline normal-case font-medium no-underline text-lg text-white"
+      >
+        {item.title}
+      </a>
+    )
+  }
+</div>

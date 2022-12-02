@@ -1,0 +1,21 @@
+---
+import BtnMobile from "../partials/BtnMobile.astro";
+import json from "../../libs/contact.json"
+import Mail from "../icons/Mail.astro";
+import Call from "../icons/Call.astro";
+// import Pin from "../icons/Pin.astro";
+---
+<div class={`
+  flex
+  ${Astro.props.class}
+`}>
+  <BtnMobile href={`tel:${json.phone}`}>
+    <Call />
+  </BtnMobile>
+  <BtnMobile href={`mailto:${json.email}`}>
+    <Mail />
+  </BtnMobile>
+  <!-- <BtnMobile href={`https://goo.gl/maps/4vENa3HzzJ2P3uQ29`} target="_blank">
+    <Pin />
+  </BtnMobile> -->
+</div>

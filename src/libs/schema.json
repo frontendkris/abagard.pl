@@ -1,0 +1,41 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Attorney",
+  "name": "Kancelaria Adwokacka Mariusz Wysocki",
+  "image": [
+    "https://adwokatwysocki.pl/adwokat-mariusz-wysocki-tiny.jpg"
+  ],
+  "telephone": [
+    "+48 71 789 60 94",
+    "607 625 102",
+    "535 390 079"
+  ],
+  "email": "kancelaria@adwokatwysocki.pl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "T. Kościuszki 65/6",
+    "addressLocality": "Wrocław",
+    "postalCode": "50-008"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.1016231,
+    "longitude": 17.0354459
+  },
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "16:30"
+    }
+  ],
+  "url": "https://adwokatwysocki.pl/"
+}

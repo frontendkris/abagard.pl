@@ -1,0 +1,9 @@
+---
+import json from "../../libs/contact.json"
+import Mail from "../icons/Mail.astro";
+import Call from "../icons/Call.astro";
+---
+<div class="w-max-content m-auto mr-0 mb-0 hidden lg:flex items-center justify-end gap-6 text-sm bg-black py-4 px-6 z-20 text-white fixed bottom-0 right-0">
+  <div class="flex gap-2 items-center justify-center"><Call /><a href={`tel:${json.phone}`} set:text={json.phone} class="hover:underline"></a></div>
+  <div class="flex gap-2 items-center justify-center"><Mail /><a href={`mailto:${json.email}`} set:text={json.email} class="hover:underline"></a></div>
+</div>

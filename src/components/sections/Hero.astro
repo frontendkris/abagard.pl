@@ -1,0 +1,23 @@
+---
+---
+<div id="start" class="hero h-screen w-screen relative overflow-hidden bg-black">
+  <video autoplay muted loop
+    class="w-auto h-auto min-h-screen min-w-full absolute -bottom-10 lg:static m-auto lg:mt-auto opacity-70 js-hero-video"
+  >
+    
+  </video>
+  <div class="hero-content container xl:max-w-[600px] text-white">
+    <div class="grid col-span-1">
+      <p class="text-3xl xl:text-8xl leading-snug font-extrabold uppercase">Montujemy płytki wielkoformatowe</p>
+      <p class="py-6 text-lg xl:text-2xl leading-snug font-extrabold text-base-200">w Poznaniu i okolicach</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  if (window.innerWidth > 1024) {
+    document.querySelector('.js-hero-video').innerHTML = `<source src="/output-desktop.mp4" type="video/mp4" media="all and (min-width:1025px)">`
+  } else {
+    document.querySelector('.js-hero-video').innerHTML = `<source src="/hero-mobile-output.mp4" type="video/mp4" media="all and (max-width:1024px)">`
+  }
+</script>

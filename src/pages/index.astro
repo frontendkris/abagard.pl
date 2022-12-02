@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Numbers from '../components/sections/Numbers.astro';
+import Steps from '../components/sections/Steps.astro';
+import Faq from '../components/sections/Faq.jsx';
+import Content from '../components/sections/Content.astro';
+import Footer from '../components/sections/Footer.astro';
+import ContactData from '../components/partials/ContactData.astro';
+
+const title = "Płytki wielkoformatowe Poznań – Abagard"
+const description = ""
+---
+
+<Layout title={title} description={description}>
+	<main>
+    <ContactData />
+    <Hero />
+    <Steps />
+    <Numbers />
+    <Faq client:idle />
+    <Content />
+	</main>
+  <Footer />
+</Layout>
