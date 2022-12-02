@@ -50,10 +50,6 @@ export default function Faq(params) {
       a: "Wszystko zabezpieczam przed zniszczeniem i pyłem.",
     },
     {
-      q: "Czy dostępne są rabaty?",
-      a: "Rabaty nie istnieją.",
-    },
-    {
       q: "Jak mogę się skontaktować?",
       a: `Preferuję kontakt przede wszystkim WhatsApp, SMS, później email. Państwo piszą o co chodzi, ja oddzwaniam w przerwie lub po wyjściu z pracy. Telefony odbieram wyłącznie w godzinach od 9:00 do 16:00 i jest to dla mnie ostateczność.<br><a href="tel${contact.phone}">${contact.phone}</a><br><a href="tel:${contact.email}">${contact.email}</a>`,
     },
