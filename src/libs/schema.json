@@ -1,26 +1,17 @@
 {
   "@context": "http://schema.org",
-  "@type": "Attorney",
-  "name": "Kancelaria Adwokacka Mariusz Wysocki",
+  "@type": "ProfessionalService",
+  "name": "Abagard - płytki wielkoformatowe Poznań",
   "image": [
-    "https://adwokatwysocki.pl/adwokat-mariusz-wysocki-tiny.jpg"
   ],
   "telephone": [
-    "+48 71 789 60 94",
-    "607 625 102",
-    "535 390 079"
+    "+48 888 124 560"
   ],
-  "email": "kancelaria@adwokatwysocki.pl",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "T. Kościuszki 65/6",
-    "addressLocality": "Wrocław",
-    "postalCode": "50-008"
-  },
+  "email": "jaroslaw.boleslawski@gmail.com",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 51.1016231,
-    "longitude": 17.0354459
+    "latitude": 52.409538,
+    "longitude": 16.931992
   },
   "priceRange": "$$$",
   "openingHoursSpecification": [
@@ -34,8 +25,8 @@
         "Friday"
       ],
       "opens": "08:00",
-      "closes": "16:30"
+      "closes": "17:00"
     }
   ],
-  "url": "https://adwokatwysocki.pl/"
+  "url": "https://abagard.pl/"
 }
