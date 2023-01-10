@@ -2,8 +2,20 @@
 import json from "../../libs/contact.json"
 import Mail from "../icons/Mail.astro";
 import Call from "../icons/Call.astro";
+
+const whatsAppMessage = encodeURIComponent("Dzień dobry, znalazłem pana stronę i jestem zainteresowany zatrudnieniem. Proszę o szybki kontakt, abyśmy mogli omówić szczegóły :)");
 ---
-<div class="w-max-content m-auto mr-0 mb-0 hidden lg:flex items-center justify-end gap-6 text-sm bg-black py-4 px-6 z-20 text-white fixed bottom-0 right-0">
+<div class="w-max-content m-auto mr-0 mb-0 hidden lg:flex items-center justify-end gap-6 text-sm bg-black py-3 px-6 z-20 text-white fixed bottom-0 right-0">
+  <a class="flex gap-2 items-center justify-center relative" target="_blank" rel="nofollow" aria-label="Porozmawiajmy na WhatsApp" href={`https://wa.me/${json.phone.replace(/[^0-9]/g, '')}?text=${whatsAppMessage}`}>
+    <img class="relative h-6 w-6" title="Porozmawiajmy na WhatsApp" alt="Ikona WhatsApp uruchamiająca czat" src="/whatsapp-mono.svg" />
+    <span class="font-semibold">Najszybciej odpowiadam na WhatsApp</span>
+  </a>
   <div class="flex gap-2 items-center justify-center"><Call /><a href={`tel:${json.phone}`} set:text={json.phone} class="hover:underline"></a></div>
   <div class="flex gap-2 items-center justify-center"><Mail /><a href={`mailto:${json.email}`} set:text={json.email} class="hover:underline"></a></div>
+</div>
+
+<div class="w-16 h-16 fixed right-4 bottom-4 z-50 lg:hidden">
+  <a class="block relative" aria-label="Porozmawiajmy na WhatsApp" target="_blank" rel="nofollow" href={`https://wa.me/${json.phone.replace(/[^0-9]/g, '')}?text=${whatsAppMessage}`}>
+    <img class="relative" title="Porozmawiajmy na WhatsApp" alt="Ikona WhatsApp uruchamiająca czat" src="/WhatsApp.svg" />
+  </a>
 </div>

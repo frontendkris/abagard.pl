@@ -1,0 +1,61 @@
+---
+import "@fontsource/work-sans"
+import {
+  ImageSupportDetection,
+} from "astro-imagetools/components"
+import Navbar from "../components/sections/Navbar.astro"
+import Footer from '../components/sections/Footer.astro';
+import "../global.css"
+import NavMobile from "../components/partials/NavMobile.astro"
+import schema from "../libs/schema.json"
+import ContactData from '../components/partials/ContactData.astro';
+import HeroArticle from "../components/sections/HeroArticle.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html 
+  lang="pl-PL" 
+  class="scroll-smooth no-scrollbar"
+  data-theme="cmyk"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.metaTitle}</title>
+    <meta name="description" content={frontmatter.metaDescription}>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)}>
+    </script>
+    <ImageSupportDetection />
+    <style>
+      * { font-family: "Work Sans", sans-serif; }
+    </style>
+	</head>
+	<body class="no-scrollbar text-base-content bg-base-100">
+    <div class="drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content scroll-smooth no-scrollbar overflow-x-hidden relative">
+        <Navbar />
+        <ContactData />
+        <main>
+          <article>
+            <HeroArticle title={frontmatter.h1} subtitle={frontmatter.subtitle} />
+            <div class="container mx-auto py-10">
+              <div class="prose lg:prose-lg max-w-none">
+                <slot />
+              </div>
+            </div>
+          </article>
+        </main>
+        <Footer />
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer" class="drawer-overlay"></label>
+        <NavMobile />
+      </div>
+    </div>
+	</body>
+</html>

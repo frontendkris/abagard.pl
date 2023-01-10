@@ -1,0 +1,54 @@
+---
+import ArrowButton from "../partials/ArrowButton";
+import contact from "../../libs/contact.json";
+import LightBox from "../partials/LightBox";
+
+const { title, subtitle, isExcerpt } = Astro.props;
+---
+<div id="portfolio" class="py-16 mx-auto lg:py-20 relative">
+  <div class="container mx-auto">
+    <h2 class="mb-4 text-2xl lg:text-4xl font-bold font-heading">
+      {title ? title : `Niektóre z moich realizacji`}
+    </h2>
+    <p class="mb-10 md:mb-12">{subtitle ? subtitle : `Kliknij w zdjęcie, aby powiększyć.`}</p>
+    <a href="#about-me" class="underline block -mt-4 mb-10 lg:hidden">Kliknij tutaj, aby poznać wykonawcę</a>
+  </div>
+  <div class={`lg:flex relative ${isExcerpt ? 'w-full mx-auto' : 'w-full'}`}>
+    <div class={`columns-2 md:columns-3 ${isExcerpt ? 'lg:columns-4 2xl:columns-8' : 'lg:columns-4 2xl:columns-5 2xl:max-w-[1700px]'}`}>
+      <LightBox isExcerpt={isExcerpt} client:only="react" />
+    </div>
+    {
+      !isExcerpt &&
+      <div class="relative w-auto px-5 lg:px-12 bg-red mt-10 lg:mt-0">
+        <div class="flex flex-col sticky top-10 left-0 h-max min-h-max max-h-max mx-auto max-w-lg prose-lg">
+          <div class="lg:bg-accent lg:text-white lg:p-8">
+            <h3 id="about-me" class="font-bold mt-0">Podobają ci się moje prace?</h3>
+            <p class="mt-0 mb-5">Zgłoś się po darmową wycenę zlecenia</p>
+            <p class="mt-0 mb-0">
+              Najszybciej odpowiadam na <strong>WhatsApp i SMS</strong>.
+              <br /><a class="underline" href={`tel:${contact.phone}`}>{contact.phone}</a>
+              <br /><a class="underline" href={`mailto:${contact.email}`}>{contact.email}</a>
+            </p>
+          </div>
+          <h3 class="font-bold mt-6">Jarosław Bolesławski</h3>
+          <p class="text-black italic leading-snug">Ekspert w temacie wykończeń i kładzenia płytek wielkoformatowych</p>
+          <img src="/jaroslaw.jpg" class="mt-4" loading="lazy"/>
+          <p class="mt-0 mb-5">Specjalizuję się w układaniu płytek wielkoformatowych od 20 lat. <strong>Wykańczam każde wnętrze na gotowo</strong>. Podczas wieloletniej pracy w Niemczech przejąłem zachodnie standardy precyzji.</p>
+          <p class="mt-0 mb-5">Zapewniam moim klientom profesjonalne, wysokiej jakości i trwałe rezultaty, oferując doskonałą obsługę w przystępnej cenie.</p>
+          <p class="mt-0 mb-5">Poznajmy się i zobacz dlaczego jestem określany jako prawdopodobnie <strong>najlepszy płytkarz w Poznaniu</strong>.</p>
+          <a href="#portfolio" class="underline block -mt-4 mb-10 lg:hidden">Kliknij tutaj, aby wrócić do góry</a>
+        </div>
+      </div>
+    }
+  </div>
+  {
+    isExcerpt &&
+    <div class="container mx-auto">
+      <div class="flex justify-end items-center mt-10">
+        <a href="/portfolio">
+          <ArrowButton title="Zobacz pełną galerię" />
+        </a>
+      </div>
+    </div>
+  }
+</div>

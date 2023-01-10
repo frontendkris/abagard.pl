@@ -14,7 +14,20 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: ['cmyk'],
+    themes: [{
+      abagard: {
+        "primary": "#695D68",
+        "secondary": "#9FCEDC",
+        "accent": "#b54164",
+        "neutral": "#292524",
+        "light": "#efeae3",
+        "base-100": "#FFFFFF",
+        "info": "#4AA8BF",
+        "success": "#81328F",
+        "warning": "#EF8234",
+        "error": "#EA4034",
+      },
+    }],
   },
   plugins: [
     require("daisyui"),

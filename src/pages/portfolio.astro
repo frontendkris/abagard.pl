@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Portfolio from '../components/sections/Portfolio.astro';
+import HeroArticle from '../components/sections/HeroArticle.astro';
+
+const title = "Portfolio - galeria realizacji usług płytkarskich w Poznaniu"
+const description = "Zobacz niektóre z moich realizacji z zakresu usług płytkarskich. Posiadam szerokie doświadczenie w wykonywaniu prac zarówno w domach prywatnych, jak i w obiektach użytku publicznego w Poznaniu. Oferuję profesjonalne doradztwo, szybką i fachową realizację oraz konkurencyjne ceny."
+---
+
+<Layout title={title} description={description}>
+	<main>
+    <HeroArticle 
+      title="Portfolio usług płytkarkich firmy Abagard w Poznaniu"
+      subtitle="Profesjonalizm, doświadczenie i indywidualne podejście do każdego zlecenia"
+    />
+    <Portfolio isExcerpt={false} />
+	</main>
+</Layout>

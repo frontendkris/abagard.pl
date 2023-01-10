@@ -3,10 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/sections/Hero.astro';
 import Numbers from '../components/sections/Numbers.astro';
 import Steps from '../components/sections/Steps.astro';
-import Faq from '../components/sections/Faq.jsx';
+import Faq from '../components/sections/Faq';
 import Content from '../components/sections/Content.astro';
-import Footer from '../components/sections/Footer.astro';
-import ContactData from '../components/partials/ContactData.astro';
+import Portfolio from '../components/sections/Portfolio.astro';
 
 const title = "Płytkarz Poznań - Profesjonalne Usługi Glazurnicze w Poznaniu"
 const description = "Łazienki na gotowo. Profesjonalne układanie płytek wielkoformatowych. Jako czołowy płytkarz Poznania doprowadzę Twój dom lub firmę do idealnego stanu!"
@@ -14,12 +13,11 @@ const description = "Łazienki na gotowo. Profesjonalne układanie płytek wielk
 
 <Layout title={title} description={description}>
 	<main>
-    <ContactData />
     <Hero />
-    <Steps />
+    <Portfolio isExcerpt={true} />
     <Numbers />
     <Faq client:idle />
+    <Steps />
     <Content />
 	</main>
-  <Footer />
 </Layout>

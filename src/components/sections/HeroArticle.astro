@@ -1,0 +1,16 @@
+---
+export interface Props {
+	title: string;
+	subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+<div id="start" class="w-screen relative overflow-hidden bg-neutral">
+  <div class="container mx-auto text-white h-full">
+    <div class="flex flex-col justify-center items-start h-full pt-16 pb-10">
+      <h1 class="text-2xl xl:text-4xl leading-snug font-extrabold" set:text={title}></h1>
+      { subtitle && <p class="py-6 text-lg xl:text-2xl leading-snug font-extrabold mb-0 text-base-200" set:text={subtitle}></p>}
+    </div>
+  </div>
+</div>
