@@ -14,6 +14,6 @@ Montaż płytek wielkoformatowych to nie lada wyzwanie, wymagające odpowiedniej
 Oferuję szeroki wybór płytek wielkoformatowych, dzięki czemu na pewno znajdziesz coś dla siebie. Polecane przeze mnie płytki cechują się wysoką jakością, trwałością i estetyką, dzięki czemu doskonale nadadzą się do każdego wnętrza.
 
 ### Indywidualne podejście do każdego klienta
-Jeśli chcesz, aby montaż płytek wielkoformatowych w Twoim domu czy mieszkaniu w Poznaniu przebiegł sprawnie i bezproblemowo, zgłoś się do mnie. Nie każdy (płytkarz w Poznaniu)[/plytkarz-poznan] chce wykonać swoją pracę dobrze! Ja gwarantuję, że podchodzę do każdego klienta indywidualnie i dopasuję usługi do jego potrzeb i oczekiwań.
+Jeśli chcesz, aby montaż płytek wielkoformatowych w Twoim domu czy mieszkaniu w Poznaniu przebiegł sprawnie i bezproblemowo, zgłoś się do mnie. Nie każdy [płytkarz w Poznaniu](/plytkarz-poznan) chce wykonać swoją pracę dobrze! Ja gwarantuję, że podchodzę do każdego klienta indywidualnie i dopasuję usługi do jego potrzeb i oczekiwań.
 
 Zachęcam do kontaktu i skorzystania z moich usług. Jestem pewny, że będziesz zadowolony z efektu końcowego i polecisz mnie swoim znajomym. Napisz na WhatsApp lub wyślij SMS w celu uzyskania szczegółowych informacji i wyceny.

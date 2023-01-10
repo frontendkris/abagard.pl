@@ -10,10 +10,12 @@ Szukasz najlepszego płytkarza Poznania? Nie szukaj dalej!
 
 W Poznaniu pracują jedni z najbardziej doświadczonych i wykwalifikowanych płytkarzy w Polsce. Niezależnie od tego, czy potrzebujesz pomocy przy nowej przebudowie łazienki, czy po prostu chcesz odświeżyć swoją kuchnię, jestem tutaj, aby Ci pomóc.
 
+### Nie każdy płytkarz Poznania zrobi pracę rzetelnie
 Dzięki wieloletniemu doświadczeniu i dbałości o szczegóły mogę tworzyć wspaniałe projekty z płytek wielkoformatowych, które przetrwają lata. Od tradycyjnych płytek ceramicznych po nowoczesne mozaiki szklane — mam umiejętności i wiedzę, dzięki którym Twoja wizja ożyje. Skontaktuj się ze mną już dziś i rozpocznij swój wymarzony projekt!
 
-Jestem płytkarzem z Poznania. Moją specjalnością są płytki wielkoformatowe. Zajmuję się wszelkimi pracami związanymi z płytkami, od układania nowych, po naprawy i renowacje starych. Dysponuję szerokim wyborem materiałów, dzięki czemu jestem w stanie spełnić nawet najbardziej wyszukane oczekiwania moich klientów.
+Jestem płytkarzem z Poznania. Moją specjalnością są [płytki wielkoformatowe](/montaz-plytek-wielkoformatowych-poznan). Zajmuję się wszelkimi pracami związanymi z płytkami, od układania nowych, po naprawy i renowacje starych. Dysponuję szerokim wyborem materiałów, dzięki czemu jestem w stanie spełnić nawet najbardziej wyszukane oczekiwania moich klientów.
 
+## Co liczy się w płytkarstwie dla Poznaniaków
 Oprócz doskonałej jakości usług, oferuję również konkurencyjne ceny i elastyczne terminy realizacji zleceń. Jestem otwarty na współpracę zarówno z osobami prywatnymi, jak i firmami i innymi przedsiębiorcami.
 
 Pamiętaj: łatwo mnie znaleźć w internecie. Zobacz moje realizacje. Gdy będziesz chciał do nich wrócić, znajdziesz mnie w google pod hasłem "płytkarz poznań" lub zapamiętaj adres "abagard.pl". Zachęcam do zapoznania się z moim portfolio i kontaktu, jeśli szukasz płytkarza w Poznaniu lub okolicach. Gwarantujemy profesjonalizm, terminowość i zadowolenie z wykonanych przez nas prac.
