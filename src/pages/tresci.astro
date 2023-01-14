@@ -1,0 +1,30 @@
+---
+import HeroArticle from '../components/sections/HeroArticle.astro';
+import Layout from '../layouts/Article.astro';
+import { articles } from '../libs/SiteLinks.astro';
+
+const frontmatter = {
+  metaTitle: 'Treści i wiedza - Abagard',
+  metaDescription: 'Wszystkie wpisy z podziałem na kategorie.',
+  h1: 'Treści i wiedza',
+  subtitle: '',
+}
+---
+
+<Layout frontmatter={frontmatter}>
+    <div class="mt-10 pl-4">
+      <ul>
+        {
+          articles.map(item =>
+          <li>
+            <a
+            href={item.link}
+            class="block normal-case font-medium text-lg hover:underline max-w-max -ml-4"
+            >
+              {item.title}
+            </a>
+          </li>
+        )}
+      </ul>
+    </div>
+</Layout>

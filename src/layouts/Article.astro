@@ -10,6 +10,7 @@ import NavMobile from "../components/partials/NavMobile.astro"
 import schema from "../libs/schema.json"
 import ContactData from '../components/partials/ContactData.astro';
 import HeroArticle from "../components/sections/HeroArticle.astro";
+import PortfolioSidebar from "../components/sections/PortfolioSidebar.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -43,13 +44,22 @@ const { frontmatter } = Astro.props;
         <main>
           <article>
             <HeroArticle title={frontmatter.h1} subtitle={frontmatter.subtitle} />
-            <div class="container mx-auto py-10">
-              <div class="prose lg:prose-lg max-w-none">
-                <slot />
+            <div class="container mx-auto py-10 lg:py-16">
+              <div class="grid grid-cols-12 lg:gap-x-20">
+                <div class="col-span-12 lg:col-span-8">
+                  <div class="prose lg:prose-lg max-w-none">
+                      <slot />
+                  </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 mt-12 lg:mt-0">
+                  <aside>
+                    <PortfolioSidebar />
+                  </aside>
+                </div>
               </div>
             </div>
           </article>
-        </main>
+          </main>
         <Footer />
       </div>
       <div class="drawer-side">

@@ -1,0 +1,18 @@
+---
+import ArrowButton from "../partials/ArrowButton";
+import contact from "../../libs/contact.json";
+import LightBox from "../partials/LightBox";
+---
+<h2 class="text-2xl lg:text-3xl mb-12 font-bold font-heading">
+  {`Moje porftolio`}
+</h2>
+<div class={`lg:flex relative w-full mx-auto`}>
+  <div class={`columns-2`}>
+    <LightBox isExcerpt={true} client:only="react" />
+  </div>
+</div>
+<div class="flex justify-end items-center mt-10">
+  <a href="/portfolio">
+    <ArrowButton title="Zobacz pełną galerię" />
+  </a>
+</div>
