@@ -6,18 +6,22 @@ import Steps from '../components/sections/Steps.astro';
 import Faq from '../components/sections/Faq';
 import Content from '../components/sections/Content.astro';
 import Portfolio from '../components/sections/Portfolio.astro';
+import References from '../components/sections/References.astro';
 
-const title = "Płytkarz Poznań - Profesjonalne Usługi Glazurnicze w Poznaniu"
-const description = "Łazienki na gotowo. Profesjonalne układanie płytek wielkoformatowych. Jako czołowy płytkarz Poznania doprowadzę Twój dom lub firmę do idealnego stanu!"
+const frontmatter = {
+  metaTitle: "Płytkarz Poznań - Profesjonalne Usługi Glazurnicze w Poznaniu",
+  metaDescription: "Łazienki na gotowo. Profesjonalne układanie płytek wielkoformatowych. Jako czołowy płytkarz Poznania doprowadzę Twój dom lub firmę do idealnego stanu!"
+}
 ---
 
-<Layout title={title} description={description}>
+<Layout frontmatter={frontmatter}>
 	<main>
     <Hero />
     <Portfolio isExcerpt={true} />
     <Numbers />
-    <Faq client:idle />
     <Steps />
+    <Faq client:idle />
+    <References />
     <Content />
 	</main>
 </Layout>

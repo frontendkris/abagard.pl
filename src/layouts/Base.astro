@@ -1,0 +1,61 @@
+---
+import "@fontsource/work-sans"
+import {
+  ImageSupportDetection,
+} from "astro-imagetools/components"
+import Navbar from "../components/sections/Navbar.astro"
+import Footer from '../components/sections/Footer.astro';
+import "../global.css"
+import NavMobile from "../components/partials/NavMobile.astro"
+import schema from "../libs/schema.json"
+import ContactData from '../components/partials/ContactData.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html 
+  lang="pl-PL" 
+  class="scroll-smooth no-scrollbar"
+  data-theme="abagard"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-6ER4FFXWFE"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6ER4FFXWFE');
+    </script>
+    
+    <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    <style>
+      * { font-family: "Work Sans", sans-serif; }
+    </style>
+    <ImageSupportDetection />
+    <meta name="generator" content={Astro.generator} />
+    
+    <meta name="description" content={frontmatter.metaDescription}>
+		<title>{frontmatter.metaTitle}</title>
+	</head>
+	<body class="no-scrollbar text-base-content bg-base-100">
+    <div class="drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content scroll-smooth scroll-pt-20 lg:scroll-pt-0 no-scrollbar overflow-x-hidden relative">
+        <Navbar />
+        <ContactData />
+          <slot />
+        <Footer />
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer" class="drawer-overlay"></label>
+        <NavMobile />
+      </div>
+    </div>
+	</body>
+</html>

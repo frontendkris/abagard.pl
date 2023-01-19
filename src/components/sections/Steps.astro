@@ -1,32 +1,30 @@
 ---
 import SectionHeading from "../partials/SectionHeading.astro";
+import { Image, Picture } from '@astrojs/image/components';
+
 
 const steps = [
   {
-    title: 'Umów się',
-    desc: 'Preferuję kontakt przez WhatsApp i SMS. Powiedz krótko gdzie mieści się przedmiot pracy i co chciałbyś osiągnąć. Jeśli korzystasz z WhatsApp, możesz wysłać zdjęcia pomieszczenia do pracy.'
+    title: 'Pierwsza rozmowa',
+    desc: 'Preferuję kontakt przez WhatsApp i SMS. Powiedz krótko gdzie mieści się przedmiot zlecenia i co chciałbyś osiągnąć.'
   },
   {
-    title: 'Pokaż temat pracy',
-    desc: 'Krótkie oględziny pozwolą na dokładniejsze oszacowanie kosztów pracy. Doradzę i pomogę uniknąć błędów.'
-  },
-  {
-    title: 'Zakup materiałów',
-    desc: 'Wiesz co najlepiej kupić oraz w jakiej ilości. Prawdopodobnie pomogłem Ci sporo zaoszczędzić!'
+    title: 'Spotkanie i wycena',
+    desc: 'Prawdopodobnie pomogę Ci sporo zaoszczędzić z uwagi na doświadczenie z materiałami i wyposażeniem!'
   },
   {
     title: 'Realizacja',
-    desc: 'Plan i zakupy gotowe. Przechodzę do pracy!'
+    // desc: 'Przechodzę do pracy'
   }
 ]
 ---
-<section id="wspolpraca" class="px-4 sm:px-6 lg:px-8 py-16 mx-auto">
+<section id="wspolpraca" class="mx-auto overflow-hidden">
   <div class="container mx-auto">
-    <SectionHeading 
-      title="Jak nawiązać współpracę" 
-    />
-    <div class="grid gap-6 row-gap-10 md:grid-cols-12">
-      <div class="col-span-12 lg:col-span-8 md:pb-6 md:pr-16">
+    <div class="grid md:grid-cols-12">
+      <div class="col-span-12 lg:col-span-6 md:pb-6 md:pr-16 py-16">
+        <SectionHeading 
+          title="Jak nawiązać współpracę" 
+        />
         {
           steps.map((step, index) => {
             return (
@@ -60,14 +58,13 @@ const steps = [
           })
         }
       </div>
-      <div class="col-span-12 lg:col-span-4 relative flex justify-center items-center">
-        <!-- <picture>
-          <source type="image/avif" srcset="/assets/astronaut.53563f21_Z1h1rLY.avif 400w,/assets/astronaut.53563f21_ZwQmR9.avif 768w" sizes="(max-width: 768px) 100vw, 432px"><source type="image/webp" srcset="/assets/astronaut.53563f21_ZxFCOd.webp 400w,/assets/astronaut.53563f21_btr5C.webp 768w" sizes="(max-width: 768px) 100vw, 432px"><source type="image/jpeg" srcset="/assets/astronaut.53563f21_2g9KNs.jpg 400w,/assets/astronaut.53563f21_27Bfcg.jpg 768w" sizes="(max-width: 768px) 100vw, 432px">
-          <img width="768" height="1365" src="/assets/astronaut.53563f21_Mgwln.jpg" loading="lazy" decoding="async" alt="Astronaut" class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full"> -->
-        <!-- </picture> -->
-        <!-- <iframe src="https://giphy.com/embed/XHRlBg0JopLnyIg7SZ" frameBorder="0" class="giphy-embed w-auto h-full"  allowFullScreen></iframe> -->
-        <img src="/hes-good.gif" class="giphy-embed  w-3/4 md:w-1/2 h-auto lg:w-auto lg:h-2/4" alt="Dobry płytkarz Poznań" />
+      <div class="col-span-12 lg:col-span-6 relative flex justify-center items-center">
+        <img
+          src={"/steps.jpg"}
+          alt="Dobry płytkarz Poznań"
+          class="w-full h-auto scale-125 -mt-2 lg:absolute lg:left-0 lg:top-0 lg:bottom-0 lg:m-auto lg:scale-100 lg:h-auto lg:min-w-[50vw] lg:max-w-none lg:w-auto"
+        />
       </div>
-    </div>  
+    </div>
 	</div>
 </section>

@@ -3,7 +3,7 @@ import json from "../../libs/contact.json"
 import Mail from "../icons/Mail.astro";
 import Call from "../icons/Call.astro";
 
-const whatsAppMessage = encodeURIComponent("Dzień dobry, znalazłem pana stronę i jestem zainteresowany zatrudnieniem. Proszę o szybki kontakt, abyśmy mogli omówić szczegóły :)");
+const whatsAppMessage = encodeURIComponent("Dzień dobry, znalazłem pana stronę i jestem zainteresowany współpracą. Proszę o szybki kontakt, abyśmy mogli omówić szczegóły :)");
 ---
 <div class="w-max-content m-auto mr-0 mb-0 hidden lg:flex items-center justify-end gap-6 text-sm bg-black py-3 px-6 z-20 text-white fixed bottom-0 right-0">
   <a class="flex gap-2 items-center justify-center relative" target="_blank" rel="nofollow" aria-label="Porozmawiajmy na WhatsApp" href={`https://wa.me/${json.phone.replace(/[^0-9]/g, '')}?text=${whatsAppMessage}`}>

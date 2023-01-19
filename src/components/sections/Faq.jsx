@@ -68,43 +68,42 @@ export default function Faq(params) {
   ];
 
   return (
-    <div id="faq" className="px-4 py-16 mx-auto lg:py-20">
-      <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 className="max-w-lg mb-4 text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto font-heading">
-            Częste pytania i odpowiedzi
-          </h2>
-          <p>Prawdopodobnie jest tu odpowiedź na Twoje pytanie</p>
-          <SearchBar setSearch={setSearch} value={search} />
-        </div>
-      </div>
-      <div className="container mx-auto">
-          <div className="space-y-8 md:columns-2 xl:columns-3">
-            {questions.filter(el => el.q.toLowerCase().includes(search.toLowerCase()) || el.a.toLowerCase().includes(search.toLowerCase())).sort((a, b) => !!a.pin > !!b.pin).map((el, index) => {
-              return (
-                <div key={`faq-${el.q}`} className="block break-inside-avoid-column">
-                  <p className="mb-4 text-xl font-bold">
-                    
-                    {
-                      !!el.pin &&
-                      <svg className="w-7 h-7 text-accent inline-block icon-bold mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path fillRule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clipRule="evenodd" />
-                      </svg>
-                    }
+    <div id="faq" className="bg-gray-100 text-black">
+      <div class="py-16 lg:pb-20 text-black">
+        <div className="container mx-auto">
+            <div className="space-y-8 md:columns-2 xl:columns-3 gap-8">
+              <div class="block break-inside-avoid-column">
+                <h2 className="text-3xl leading-none sm:text-4xl mb-0 font-bold">
+                  Pytania i odpowiedzi
+                </h2>
+                <SearchBar setSearch={setSearch} value={search} placeholder={`Filtruj przez tekst`} className="mt-2 mb-4" />
+              </div>
+              {questions.filter(el => el.q.toLowerCase().includes(search.toLowerCase()) || el.a.toLowerCase().includes(search.toLowerCase())).sort((a, b) => !!a.pin > !!b.pin).map((el, index) => {
+                return (
+                  <div key={`faq-${el.q}`} className="block break-inside-avoid-column bg-white shadow-md p-6">
+                    <p className="mb-4 text-xl font-bold">
+                      
+                      {/* {
+                        !!el.pin &&
+                        <svg className="w-7 h-7 text-accent inline-block icon-bold mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                          <path fillRule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clipRule="evenodd" />
+                        </svg>
+                      } */}
 
-                    <span
-                      className=""
-                      dangerouslySetInnerHTML={{__html: el.q}}
-                    ></span>
-                  </p>
-                  <p
-                    className="mb-2"
-                    dangerouslySetInnerHTML={{__html: el.a}}
-                  ></p>
-                </div>
-              );
-            })}
-          </div>
+                      <span
+                        className=""
+                        dangerouslySetInnerHTML={{__html: el.q}}
+                      ></span>
+                    </p>
+                    <p
+                      className="mb-2"
+                      dangerouslySetInnerHTML={{__html: el.a}}
+                    ></p>
+                  </div>
+                );
+              })}
+            </div>
+        </div>
       </div>
     </div>
   );

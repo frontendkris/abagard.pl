@@ -8,12 +8,14 @@ subtitle: Płytki wielkoformatowe odmienią Twój dom i miejsce pracy. Założę
 ## Profesjonalny montaż płytek wielkoformatowych w Poznaniu
 Jeśli szukasz profesjonalnej firmy, która zajmuje się montażem płytek wielkoformatowych w Poznaniu, to dobrze trafiłeś! Moja firma to zespół doświadczonych fachowców, którzy pod moim okiem nauczyli się precyzji i staranności w wykonywaniu swoich prac. Często pracuję sam, jeśli projekt na to pozwala.
 
+### Perfekcyjne układanie płytek wielkoformatowych
 Montaż płytek wielkoformatowych to nie lada wyzwanie, wymagające odpowiedniej wiedzy i doświadczenia. Ja posiadam obie te cechy, dzięki czemu jestem w stanie zagwarantować perfekcyjne wykonanie każdego zlecenia.
 
-## Zaufaj naszemu doświadczeniu - perfekcyjny montaż gwarantowany
-Oferuję szeroki wybór [płytek wielkoformatowych](/plytki-wielkoformatowe-poznan/), dzięki czemu na pewno znajdziesz coś dla siebie. Polecane przeze mnie płytki cechują się wysoką jakością, trwałością i estetyką, dzięki czemu doskonale nadadzą się do każdego wnętrza.
+## Możesz naszemu doświadczeniu
+Oferuję doradztwo w szerokim wyborze [płytek wielkoformatowych](/plytki-wielkoformatowe-poznan/), dzięki czemu na pewno znajdziesz coś dla siebie. Polecane przeze mnie płytki cechują się wysoką jakością, trwałością i estetyką, dzięki czemu doskonale nadadzą się do każdego wnętrza. Nie dam Ci się nabić na produkty niskiej jakości.
 
 ### Indywidualne podejście do każdego klienta
 Jeśli chcesz, aby montaż płytek wielkoformatowych w Twoim domu czy mieszkaniu w Poznaniu przebiegł sprawnie i bezproblemowo, zgłoś się do mnie. Nie każdy [płytkarz w Poznaniu](/plytkarz-poznan/) chce wykonać swoją pracę dobrze! Ja gwarantuję, że podchodzę do każdego klienta indywidualnie i dopasuję usługi do jego potrzeb i oczekiwań.
 
+### Polecisz mnie znajomym w Poznaniu
 Zachęcam do kontaktu i skorzystania z moich usług. Jestem pewny, że będziesz zadowolony z efektu końcowego i polecisz mnie swoim znajomym. Napisz na WhatsApp lub wyślij SMS w celu uzyskania szczegółowych informacji i wyceny.

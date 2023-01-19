@@ -1,0 +1,33 @@
+---
+const data = [
+  {
+    person: 'Zofia Błaszczyk',
+    html: 'Pan Jarek, którego wynajęliśmy do prac remontowych w naszej łazience, okazał się prawdziwym artystą. Jego precyzja i zaangażowanie sprawiły, że efekt końcowy przeszedł nasze najśmielsze oczekiwania. Jesteśmy bardzo zadowoleni z jego pracy i polecamy go każdemu, kto szuka doświadczonego i profesjonalnego płytkarza.',
+  },
+  {
+    person: 'Krzysztof Król',
+    html: 'Firma Abagard zrobiła świetny remont kuchni i salonu. Pan Jarek wymienił uszkodzoną kanalizację, położył płytki wielkoformatowe, nowe panele i nowe blaty. Wymienił elektrykę i zainstalował ledy. Naprawił fronty szafek kuchennych i zajął się malowaniem. To pierwszy fachowiec, w którego pracy nie znajduję wad. Robota została wykonana dobrze i w rozsądnej cenie, dlatego polecam każdemu.'
+  },
+  {
+    person: 'Łukasz Świrbutowicz',
+    html: 'Polecam usługi pana Jarosława. Wykonał nasze kuchenne podłogi, był bardzo profesjonalny i punktualny. Praca przebiegła bezproblemowo i szybko, a efekt końcowy jest naprawdę imponujący. Jego ceny są bardzo rozsądne i polecamy go każdemu, kto szuka doświadczonego i godnego zaufania specjalistę.'
+  },
+]
+---
+<section class="py-16 lg:py-20 bg-accent text-white">
+  <div class="container mx-auto">
+    <h2 class="mb-8 lg:mb-16 text-2xl lg:text-4xl font-bold font-heading">Co sądzą o mnie klienci</h2>
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      {
+        data.map((el, index) => {
+          return (
+            <div class={`bg-white text-black p-8 shadow-md text-lg flex flex-col justify-between`}>
+              <p class="" set:html={el.html}></p>
+              <p class="mt-6" set:html={el.person}></p>
+            </div>
+          )
+        })
+      }
+    </div>
+  </div>
+</section>
