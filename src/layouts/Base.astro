@@ -10,7 +10,7 @@ import NavMobile from "../components/partials/NavMobile.astro"
 import schema from "../libs/schema.json"
 import ContactData from '../components/partials/ContactData.astro';
 
-const { frontmatter } = Astro.props;
+const { frontmatter, isArticle = false } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -23,6 +23,19 @@ const { frontmatter } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:title" content={frontmatter.metaTitle}>
+    <meta property="og:site_name" content="abagard.pl">
+    <meta property="og:url" content={Astro.url}>
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:description" content={frontmatter.metaDescription}>
+    <meta property="og:type" content={`${ isArticle ? "article" : "business.business" }`}>
+    <meta property="og:image" content="https://abagard.pl/portfolio/20201006_135539.jpg">
+    <meta property="og:image" content="https://abagard.pl/portfolio/20180525_093658.jpg">
+    <meta property="og:image" content="https://abagard.pl/portfolio/20180411_073255.jpg">
+    <meta property="og:image" content="https://abagard.pl/portfolio/20181211_185455.jpg">
+    <meta property="og:image" content="https://abagard.pl/portfolio/20191121_083326.jpg">
+    <meta property="og:image" content="https://abagard.pl/portfolio/20191025_122514.jpg">
     
     <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-6ER4FFXWFE"></script>
     <script type="text/partytown">

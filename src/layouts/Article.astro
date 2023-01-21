@@ -5,7 +5,7 @@ import Base from "./Base.astro";
 
 const { frontmatter } = Astro.props;
 ---
-<Base frontmatter={frontmatter}>
+<Base frontmatter={frontmatter} isArticle={true}>
   <article>
     <HeroArticle title={frontmatter.h1} subtitle={frontmatter.subtitle} />
     <div class="container mx-auto py-10 lg:py-16">
