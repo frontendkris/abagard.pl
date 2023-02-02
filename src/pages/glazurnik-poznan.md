@@ -11,7 +11,7 @@ Profesjonalni glazurnicy w Poznaniu mogą zaoferować szeroki wachlarz korzyści
 Zatrudnienie profesjonalnego glazurnika w Poznaniu to także oszczędność czasu i pieniędzy. Profesjonalni glazurnicy mają doświadczenie w pracy z różnymi materiałami i mają dostęp do najnowszych narzędzi i technik, co oznacza, że mogą wykonać pracę szybko i skutecznie. Ponadto są zaznajomieni z lokalnymi przepisami i regulacjami dotyczącymi układania płytek, dzięki czemu masz pewność, że Twój projekt zostanie zrealizowany bezpiecznie i zgodnie z przepisami.
 
 ## Prawdopodobnie najlepszy glazurnik Poznania
-Poznań to miasto słynące z pięknej architektury i oszałamiającej glazury. Jeśli szukasz najlepszych usług [glazurniczych w Poznaniu](/glazurnictwo-poznan/), to jesteś w domu.
+Poznań to miasto słynące z pięknej architektury i oszałamiającej glazury. Jeśli szukasz najlepszych [usług glazurniczych w Poznaniu](/uslugi-glazurnicze-poznan/), to jesteś w domu.
 
 Oferuję najwyższej jakości usługi kładzenia płytek w mieście, a mój zespół doświadczonych glazurników z pewnością zapewni Ci idealne rozwiązanie dla Twojego projektu. Przy małych projektach pracuję sam, lecz gdy pracy jest wiele, moi glazurnicy mogą pomóc we wszystkim: od instalacji podłóg po układanie płytek ściennych na wiele metrów sześciennych, upewniając się, że Twój projekt wygląda idealnie i przetrwa lata.
 

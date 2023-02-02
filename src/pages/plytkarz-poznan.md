@@ -1,23 +1,23 @@
 ---
 layout: ../layouts/Article.astro
-metaTitle: Profesjonalny płytkarz w Poznaniu - Najlepsze usługi płytkarskie w mieście
-metaDescription: Poszukujesz najlepszego płytkarza w Poznaniu? Dysponuję wieloletnim doświadczeniem i szerokim wyborem materiałów. Oferuję profesjonalne układanie płytek wielkoformatowych, konkurencyjne ceny i elastyczne terminy realizacji. Skontaktuj się ze mną i zobacz moje realizacje.
-h1: Płytkarz Poznań - profesjonalizm i doświadczenie w układaniu płytek wielkoformatowych
-subtitle: Odkryj najlepsze usługi płytkarskie w mieście
+metaTitle: Profesjonalny płytkarz w Poznaniu – Abagard
+metaDescription: Poszukujesz dobrego płytkarza w Poznaniu? Zobacz moje portfolio! Oferuję profesjonalne układanie płytek wielkoformatowych i wykończeń oraz elastyczne terminy realizacji.
+h1: Szukasz dobrego płytkarza w Poznaniu? Tu jestem!
+subtitle: Niezawodne usługi płytkarskie w Poznaniu, które spełnią Twoje wymagania
 ---
-## Najlepszy płytkarz w Poznaniu - profesjonalne układanie płytek od A do Z
-Szukasz najlepszego płytkarza Poznania? Nie szukaj dalej!
+## Jestem jednym z najlepszych płytkarzy w Poznaniu
+Szukasz najlepszego płytkarza w Poznaniu? Pozwól, że Cię zatrzymam.
 
-W Poznaniu pracują jedni z najbardziej doświadczonych i wykwalifikowanych płytkarzy w Polsce. Niezależnie od tego, czy potrzebujesz pomocy przy nowej przebudowie łazienki, czy po prostu chcesz odświeżyć swoją kuchnię, jestem tutaj, aby Ci pomóc.
+Mam ponad 20 lat doświadczenia w kładzeniu płytek i wykończeniach. To częste hasło, ale z pewnością docenisz fakt, że __właśnie to pozwala mi pracować szybciej i taniej__. Nie popełniam głupich błędów, ponieważ popełniłem ich już dość wiele. Przez wiele lat doświadczenia wyniosłem naukę,która wyróżnia mnie dzisiaj na tle innych. W trudnych sytuacjach wiem co robić, a moje decyzje są pewne i podejmowane szybko. __To czyni ze mnie dobrego płytkarza, a może jednego z najlepszych w Poznaniu__.
 
-### Nie każdy płytkarz Poznania zrobi pracę rzetelnie
-Dzięki wieloletniemu doświadczeniu i dbałości o szczegóły mogę tworzyć wspaniałe projekty z płytek wielkoformatowych, które przetrwają lata. Od tradycyjnych płytek ceramicznych po nowoczesne mozaiki szklane — mam umiejętności i wiedzę, dzięki którym Twoja wizja ożyje. Skontaktuj się ze mną już dziś i rozpocznij swój wymarzony projekt!
+### Nie każdy płytkarz z Poznania pracuje rzetelnie
+Szukasz po prostu płytkarza z Poznania, czy __dobrego płytkarza z Poznania__? A może __najlepszego__? Po pierwszą opcję zapraszam spowrotem do wyników Google. Jeżeli szukasz dobrego i najlepszego płytkarza, zapoznaj się z moim [portfolio](/portfolio/). Na stronie głównej znajdziesz wiele ciekawych informacji o współpracy. Odpowiadam tam na najważniejsze pytania o współpracy i wymaganiach a także maksymalnie odciążam Cię od troski o to jak zabrać się za remont lub budowę. Zajrzyj tam, naprawdę warto.
 
 Jestem płytkarzem z Poznania. Moją specjalnością są [płytki wielkoformatowe](/plytki-wielkoformatowe-poznan/). Zajmuję się wszelkimi pracami związanymi z płytkami, od układania nowych, po naprawy i renowacje starych. Dysponuję szerokim wyborem materiałów, dzięki czemu jestem w stanie spełnić nawet najbardziej wyszukane oczekiwania moich klientów.
 
 ## Co liczy się w płytkarstwie dla Poznaniaków
 Oprócz doskonałej jakości usług, oferuję również konkurencyjne ceny i elastyczne terminy realizacji zleceń. Jestem otwarty na współpracę zarówno z osobami prywatnymi, jak i firmami i innymi przedsiębiorcami.
 
-Pamiętaj: łatwo mnie znaleźć w internecie. Zobacz moje realizacje. Gdy będziesz chciał do nich wrócić, znajdziesz mnie w google pod hasłem [montaż płytek wielkoformatowych Poznań](/montaz-plytek-wielkoformatowych-poznan/) lub zapamiętaj adres "abagard.pl". Zachęcam do zapoznania się z moim portfolio i do kontaktu, jeśli szukasz płytkarza w Poznaniu lub okolicach. Gwarantujemy profesjonalizm, terminowość i zadowolenie z wykonanych przez nas prac.
+Pamiętaj: łatwo mnie znaleźć w internecie. Zobacz moje realizacje. Gdy będziesz chciał do nich wrócić, znajdziesz mnie w google pod hasłem [montaż płytek wielkoformatowych Poznań](/montaz-plytek-wielkoformatowych-poznan/) lub zapamiętaj adres "abagard.pl".
 
-Nie odbieram? Proszę o wiadomość na whatsApp lub SMS - na pewno się odezwę!
+Zachęcam do zapoznania się z moją galerią realizacji i do kontaktu, jeśli szukasz __dobrego płytkarza__ w Poznaniu lub okolicach. Gwarantuję profesjonalizm, terminowość i zadowolenie z wykonanych przeze mnie prac.
