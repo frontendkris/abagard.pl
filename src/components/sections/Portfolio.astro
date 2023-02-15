@@ -20,7 +20,7 @@ const { title, subtitle, isExcerpt } = Astro.props;
   </div>
   <div class={`lg:flex relative ${isExcerpt ? 'w-full mx-auto' : 'w-full'}`}>
     <div class={`${isExcerpt ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-8 w-full' : 'grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8 w-full 2xl:max-w-[75%]'}`}>
-      <LightBox isExcerpt={isExcerpt} />
+      <LightBox isExcerpt={isExcerpt} imagesHeight={isExcerpt ? 'high' : 'gallery'} />
     </div>
     {
       !isExcerpt &&
@@ -49,9 +49,7 @@ const { title, subtitle, isExcerpt } = Astro.props;
     isExcerpt &&
     <div class="container mx-auto">
       <div class="flex justify-end items-center mt-10">
-        <a href="/portfolio" class="">
-          <ArrowButton title="Zobacz pełną galerię" />
-        </a>
+        <ArrowButton href="/portfolio/" title="Zobacz pełną galerię" bgColor="black" />
       </div>
     </div>
   }

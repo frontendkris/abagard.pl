@@ -1,5 +1,11 @@
 ---
-const { isExcerpt } = Astro.props;
+
+interface Props {
+  isExcerpt: boolean;
+  imagesHeight: 'short' | 'high' | 'gallery';
+}
+
+const { isExcerpt, imagesHeight } = Astro.props;
 
 let photos = [
   // Szare duże
@@ -130,8 +136,17 @@ if (isExcerpt) {
 }
 ---
 {
-  photos.map((el, index) => 
-    <a class={`flex justify-center items-center ${isExcerpt ? 'h-72 lg:h-96 2xl:h-[600px]' : 'h-40 lg:h-80'}`} data-fslightbox href={`/portfolio_full/${el}`}>
+  photos.map((el) => 
+    <a 
+      class={`
+        flex justify-center items-center
+        ${imagesHeight == 'short' ? 'h-36 lg:h-44 2xl:h-[20vh]' : ''}
+        ${imagesHeight == 'high' ? 'h-72 lg:h-96 2xl:h-[600px]' : ''}
+        ${imagesHeight == 'gallery' ? 'h-40 lg:h-80' : ''}
+      `} 
+      data-fslightbox 
+      href={`/portfolio_full/${el}`}
+    >
       <img
         class={`transition-all ease-in-out cursor-pointer block w-full h-full object-cover`}
         src={`/portfolio/${el}`}

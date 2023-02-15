@@ -7,11 +7,9 @@ import LightBox from "../partials/LightBox.astro";
 </h2>
 <div class={`lg:flex relative w-full mx-auto`}>
   <div class={`grid grid-cols-2 gap-4 lg:gap-8 w-full`}>
-    <LightBox isExcerpt={true} />
+    <LightBox isExcerpt={true} imagesHeight='short' />
   </div>
 </div>
 <div class="flex justify-end items-center mt-10">
-  <a href="/portfolio" class="">
-    <ArrowButton title="Zobacz pełną galerię" />
-  </a>
+  <ArrowButton href="/portfolio/" title="Zobacz pełną galerię" bgColor="black" />
 </div>

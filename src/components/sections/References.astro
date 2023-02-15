@@ -19,7 +19,7 @@ const data = [
     <h2 class="mb-8 lg:mb-16 text-2xl lg:text-4xl font-bold font-heading">Co sądzą o mnie klienci</h2>
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       {
-        data.map((el, index) => {
+        data.map((el) => {
           return (
             <div class={`bg-white text-black p-8 shadow-md text-lg flex flex-col justify-between`}>
               <p class="" set:html={el.html}></p>
