@@ -8,11 +8,14 @@ Faced with the challenges of inflation and the impacts of war in Ukraine, Abagar
 Thanks to modern design and effective positioning on Google, Abagard is now experiencing a renaissance, with work scheduled for half a year in advance. The company now acquires customers not through recommendations as before, but through internet searches.
 
 ## Technologies
-- Astro JS - Chosen for its speed, efficiency, and modern capabilities, which are essential for creating responsive websites. It is unique for SEO tasks.
-- TypeScript
-- React
-- Tailwind CSS
-- Daisy UI
+- [Astro JS](https://astro.build) - Chosen for its speed, efficiency, and modern capabilities, which are essential for creating responsive websites. It is unique for SEO tasks.
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Daisy UI](https://daisyui.com/)
+
+## Services
+- [Vercel](https://vercel.com)
 
 ## Local Setup
 To run the project locally, follow these steps:
