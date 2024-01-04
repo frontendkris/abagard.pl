@@ -12,6 +12,7 @@ Thanks to modern design and effective positioning on Google, Abagard is now expe
 - TypeScript
 - React
 - Tailwind CSS
+- Daisy UI
 
 ## Local Setup
 To run the project locally, follow these steps:
