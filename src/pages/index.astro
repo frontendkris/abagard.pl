@@ -17,10 +17,10 @@ const frontmatter = {
 <Layout frontmatter={frontmatter}>
 	<main>
     <Hero />
-    <Portfolio isExcerpt={true} />
+    <Portfolio isExcerpt={true} transition:persist />
     <Numbers />
     <Steps />
-    <Faq client:idle />
+    <Faq client:idle transition:persist />
     <References />
     <Content />
 	</main>

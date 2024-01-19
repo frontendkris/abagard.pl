@@ -156,4 +156,18 @@ if (isExcerpt) {
   )
 }
 
-<script is:inline async src="/fslightbox.js"></script>
+<script is:inline>
+  const loadFsLightbox = () => {
+    const existingScript = document.querySelector('script[src="/fslightbox.js"]');
+    if (existingScript) {
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = '/fslightbox.js';
+    document.body.appendChild(script);
+  };
+
+  document.addEventListener('astro:page-load', loadFsLightbox);
+  document.addEventListener('astro:after-swap', loadFsLightbox);
+</script>

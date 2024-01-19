@@ -1,12 +1,12 @@
 ---
-import "@fontsource/work-sans"
-// import { ImageSupportDetection } from "astro-imagetools/components";
+import "@fontsource/work-sans";
 import Navbar from "../components/sections/Navbar.astro";
 import Footer from '../components/sections/Footer.astro';
 import "../global.css"
 import NavMobile from "../components/partials/NavMobile.astro"
 import schema from "../libs/schema.json"
 import ContactData from '../components/partials/ContactData.astro';
+import { ViewTransitions } from 'astro:transitions';
 
 const { frontmatter, isArticle = false } = Astro.props;
 ---
@@ -40,13 +40,12 @@ const { frontmatter, isArticle = false } = Astro.props;
     </script>
     
     <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-    <style>
-      * { font-family: "Work Sans", sans-serif; }
-    </style>
     <meta name="generator" content={Astro.generator} />
     
     <meta name="description" content={frontmatter.metaDescription}>
 		<title>{frontmatter.metaTitle}</title>
+
+    <ViewTransitions />
 	</head>
 	<body class="no-scrollbar text-base-content bg-base-100">
     <div class="drawer">
@@ -64,3 +63,7 @@ const { frontmatter, isArticle = false } = Astro.props;
     </div>
 	</body>
 </html>
+
+<style is:global>
+  body { font-family: "Work Sans", sans-serif; }
+</style>
