@@ -5,21 +5,9 @@ import LightBox from "../partials/LightBox.astro";
 
 const { title, subtitle, isExcerpt } = Astro.props;
 ---
-<div id="portfolio" class="py-16 mx-auto lg:py-20 relative -mt-4 lg:-mt-8">
-  <div class="container mx-auto">
-    {
-      isExcerpt &&
-      <h2 class="mb-4 text-2xl lg:text-4xl font-bold font-heading">
-        {title ? title : `Niektóre z moich realizacji`}
-      </h2>
-    }
-    <p class="mb-10 md:mb-12">{subtitle ? subtitle : `Kliknij w zdjęcie, aby powiększyć.`}</p>
-    {
-      !isExcerpt && <a href="#about-me" class="underline block -mt-4 mb-10 lg:hidden">Kliknij tutaj, aby poznać wykonawcę</a>
-    }
-  </div>
+<div id="portfolio" class="py-16 mx-auto lg:py-36 relative">
   <div class={`lg:flex relative ${isExcerpt ? 'w-full mx-auto' : 'w-full'}`}>
-    <div class={`${isExcerpt ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-8 w-full' : 'grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8 w-full 2xl:max-w-[75%]'}`}>
+    <div class={`${isExcerpt ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full' : 'grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8 w-full 2xl:max-w-[75%]'}`}>
       <LightBox isExcerpt={isExcerpt} imagesHeight={isExcerpt ? 'high' : 'gallery'} />
     </div>
     {
@@ -48,8 +36,8 @@ const { title, subtitle, isExcerpt } = Astro.props;
   {
     isExcerpt &&
     <div class="container mx-auto">
-      <div class="flex justify-end items-center mt-10">
-        <ArrowButton href="/portfolio/" title="Zobacz pełną galerię" bgColor="black" />
+      <div class="flex justify-center items-center mt-10">
+        <ArrowButton href="/portfolio/" title="Zobacz pełne portfolio" bgColor="black" />
       </div>
     </div>
   }

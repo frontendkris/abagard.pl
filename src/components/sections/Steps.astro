@@ -17,11 +17,11 @@ const steps = [
 ]
 ---
 <section id="wspolpraca" class="mx-auto overflow-hidden">
-  <div class="container mx-auto">
+  <div class="container mx-auto lg:my-24">
     <div class="grid md:grid-cols-12">
-      <div class="col-span-12 lg:col-span-6 md:pb-6 md:pr-16 py-16">
+      <div class="col-span-12 lg:col-span-5 md:pb-6 py-16">
         <SectionHeading 
-          title="Jak nawiązać współpracę" 
+          title="Rozpoczęcie zlecenia"
         />
         {
           steps.map((step, index) => {
@@ -37,7 +37,7 @@ const steps = [
                     }
                     {
                       index === steps.length - 1 &&
-                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-accent border-2 border-accent">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 border-2 border-emerald-600">
                         <svg viewBox="0 0 24 24" class="w-6 h-6 text-white icon-bold" astro-icon="tabler:check"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 5 5L20 7"></path></svg>
                       </div>
                     }
@@ -56,11 +56,11 @@ const steps = [
           })
         }
       </div>
-      <div class="col-span-12 lg:col-span-6 relative flex justify-center items-center">
+      <div class="col-span-12 lg:col-span-7 relative flex justify-center items-center mask mask-parallelogram-2">
         <img
           src={"/steps.jpg"}
           alt="Dobry płytkarz Poznań"
-          class="w-full h-auto scale-125 -mt-2 lg:absolute lg:left-0 lg:top-0 lg:bottom-0 lg:m-auto lg:scale-100 lg:h-auto lg:min-w-[50vw] lg:max-w-none lg:w-auto"
+          class="w-full h-auto lg:w-auto"
         />
       </div>
     </div>

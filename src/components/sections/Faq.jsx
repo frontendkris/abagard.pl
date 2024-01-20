@@ -7,7 +7,7 @@ export default function Faq(params) {
   const questions = [
     {
       q: "Jak mogę się skontaktować?",
-      a: `Najszybciej odpowiadam na WhatsApp i SMS. Państwo piszą o co chodzi, ja oddzwaniam w przerwie lub po wyjściu z pracy. Telefony odbieram wyłącznie w godzinach od 9:00 do 16:00 i jest to dla mnie ostateczność, natomiast odpisać mogę o każdej porze dnia.<br><a href="tel:${contact.phone}">${contact.phone}</a><br><a href="mailto:${contact.email}">${contact.email}</a>`,
+      a: "Najszybciej odpowiadam na WhatsApp i SMS. Państwo piszą o co chodzi, ja oddzwaniam w przerwie lub po wyjściu z pracy. Telefony odbieram wyłącznie w godzinach od 9:00 do 16:00 i jest to dla mnie ostateczność, natomiast odpisać mogę o każdej porze dnia.",
       pin: true,
     },
     {
@@ -27,11 +27,11 @@ export default function Faq(params) {
     },
     {
       q: "Jak daleko dojeżdża pan do klienta?",
-      a: "Do 25km od Poznania",
+      a: "Do 30km od Poznania.",
     },
     {
       q: "W jakich godzinach odbywa się praca?",
-      a: "Od 8:00 do 17:00",
+      a: "Od 8:00 do 17:00.",
     },
     {
       q: "Jakie są korzyści z montażu płytek wielkoformatowych?",
@@ -43,7 +43,7 @@ export default function Faq(params) {
     },
     {
       q: "Praca jest wykonywana przez pana osobiście, czy zleca ją pan mniej doświadczonym pracownikom?",
-      a: "Pracuję osobiście nad zleconą pracą",
+      a: "Pracuję osobiście nad zleconą pracą.",
     },
     {
       q: "Czy wykonuje pan izolacje?",
@@ -68,37 +68,24 @@ export default function Faq(params) {
   ];
 
   return (
-    <div id="faq" className="bg-gray-100 text-black">
-      <div class="py-16 lg:pb-20 text-black">
-        <div className="container mx-auto">
-            <div className="space-y-8 md:columns-2 xl:columns-3 gap-8">
-              <div class="block break-inside-avoid-column">
-                <h2 className="text-3xl leading-none sm:text-4xl mb-0 font-bold">
+    <div id="faq" className="bg-white text-black lg:my-12">
+      <div className="py-16 lg:pb-20 text-black">
+        <div className="container mx-auto max-w-6xl">
+            <div className="space-y-8 gap-4">
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center break-inside-avoid-column lg:text-center lg:mx-auto">
+                <h2 className="text-2xl lg:text-5xl leading-none mb-0 font-bold m-0">
                   Pytania i odpowiedzi
                 </h2>
-                <SearchBar setSearch={setSearch} value={search} placeholder={`Filtruj przez tekst`} className="mt-2 mb-4" />
+                <SearchBar setSearch={setSearch} value={search} className="lg:max-w-xs sm:m-0" />
               </div>
               {questions.filter(el => el.q.toLowerCase().includes(search.toLowerCase()) || el.a.toLowerCase().includes(search.toLowerCase())).sort((a, b) => !!a.pin > !!b.pin).map((el, index) => {
                 return (
-                  <div key={`faq-${el.q}`} className="block break-inside-avoid-column bg-white shadow-md p-6">
-                    <p className="mb-4 text-xl font-bold">
-                      
-                      {/* {
-                        !!el.pin &&
-                        <svg className="w-7 h-7 text-accent inline-block icon-bold mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                          <path fillRule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clipRule="evenodd" />
-                        </svg>
-                      } */}
-
-                      <span
-                        className=""
-                        dangerouslySetInnerHTML={{__html: el.q}}
-                      ></span>
-                    </p>
-                    <p
-                      className="mb-2"
-                      dangerouslySetInnerHTML={{__html: el.a}}
-                    ></p>
+                  <div key={`faq-${el.q}`} className="collapse collapse-arrow bg-gray-200 shadow-md">
+                    <input type="radio" name="accordion" defaultChecked={index === 0} /> 
+                    <div className="collapse-title text-xl font-medium" dangerouslySetInnerHTML={{__html: el.q}}>
+                    </div>
+                    <div className="collapse-content" dangerouslySetInnerHTML={{__html: el.a}}> 
+                    </div>
                   </div>
                 );
               })}

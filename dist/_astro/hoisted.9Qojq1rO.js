@@ -1,0 +1,1 @@
+import"./hoisted.rfglzoOR.js";window.innerWidth>1024?document.querySelector(".js-hero-video").innerHTML='<source src="/output-desktop.mp4" type="video/mp4" media="all and (min-width:1025px)">':document.querySelector(".js-hero-video").innerHTML='<source src="/hero-mobile-output.mp4" type="video/mp4" media="all and (max-width:1024px)">';

@@ -5,8 +5,8 @@ import json from "../../libs/contact.json"
 import Mail from "../icons/Mail.astro";
 import Call from "../icons/Call.astro";
 ---
-<nav class="min-w-80 max-w-max text-base-100 bg-black">
-  <ul class="menu p-4 lg:pr-12 overflow-y-auto">
+<nav class="min-w-80 w-screen lg:max-w-max h-screen text-base-100 bg-black">
+  <ul class="menu pl-1 lg:pr-6 pt-16 lg:pt-20 overflow-y-auto">
     {
       links.map(item =>
         <li>
@@ -21,11 +21,11 @@ import Call from "../icons/Call.astro";
       )
     }
   
-    <NavIcons class="my-4 gap-1 lg:hidden" />
-    <div class="hidden lg:flex flex-col gap-4 px-4 mt-10">
-      <h3 class="text-xl">Kontakt</h3>
-      <div class="flex gap-2 items-center justify-start normal-case font-medium max-w-max hover:underline"><Call /><a href={`tel:${json.phone}`} set:text={json.phone}></a></div>
-      <div class="flex gap-2 items-center justify-start normal-case font-medium max-w-max hover:underline"><Mail /><a href={`mailto:${json.email}`} set:text={json.email}></a></div>
+    <!-- <NavIcons class="my-4 gap-1 lg:hidden" /> -->
+    <div class="flex flex-col gap-4 px-4 mt-10">
+      <h3 class="text-xl lg:text-3xl">Kontakt</h3>
+      <div class="text-lg flex gap-2 items-center justify-start normal-case font-medium max-w-max hover:underline"><Call /><a href={`tel:${json.phone}`} set:text={json.phone}></a></div>
+      <div class="lg:text-lg flex gap-2 items-center justify-start normal-case font-medium max-w-max hover:underline"><Mail /><a href={`mailto:${json.email}`} set:text={json.email}></a></div>
     </div>
   </ul>
 </nav>
