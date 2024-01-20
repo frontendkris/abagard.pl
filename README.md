@@ -1,49 +1,33 @@
-# Welcome to [Astro](https://astro.build)
+# Abagard.pl Website
+The abagard.pl project is a testament to successful web design and effective SEO strategy. Created for Abagard, a local tiling service business based in Poznań, this website significantly improved the company's visibility on Google.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+## Context
+Faced with the challenges of inflation and the impacts of war in Ukraine, Abagard experienced a notable decrease in orders. I was tasked with implementing the website and conducting SEO activities to enhance the company's online presence and attract new customers.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Outcome
+Thanks to modern design and effective positioning on Google, Abagard is now experiencing a renaissance, with work scheduled for half a year in advance. The company now acquires customers not through recommendations as before, but through internet searches.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Technologies
+- [Astro JS](https://astro.build) - Chosen for its speed, efficiency, and modern capabilities, which are essential for creating responsive websites. It is unique for SEO tasks.
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Daisy UI](https://daisyui.com/)
 
+## Services
+- [Vercel](https://vercel.com)
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Local Setup
+To run the project locally, follow these steps:
 
 ```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+git clone https://github.com/frontendkris/abagard.pl.git
+cd abagard.pl
+npm install
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## License
+This project is available exclusively for review and learning purposes. Cloning the repository is permitted only for the purpose of viewing the code in a local IDE environment.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Any other use of the code, including modification, distribution, commercial use, or public sharing, is strictly prohibited without express written consent.
