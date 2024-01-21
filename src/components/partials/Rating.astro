@@ -1,14 +1,18 @@
 ---
-type Props = {
-  value: number;
+export type RatingProps = {
+  value?: number;
 }
 
-const { value } : Props = Astro.props;
+const { value }: RatingProps = Astro.props;
 ---
 <div class="rating">
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked={value === 1} disabled />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked={value === 2} disabled />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked={value === 3} disabled />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked={value === 4} disabled />
-  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked={value === 5} disabled />
+  {Array.from({ length: 5 }, (_, index) => (
+    <input
+      type="radio"
+      name="rating-2"
+      class="mask mask-star-2 bg-orange-400"
+      checked={value === index + 1}
+      disabled
+    />
+  ))}
 </div>

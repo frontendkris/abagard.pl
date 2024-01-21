@@ -1,36 +1,20 @@
 ---
-import Rating from "../partials/Rating.astro"
-
-const data = [
-  {
-    person: 'Zofia Błaszczyk',
-    rating: 5,
-    html: 'Pan Jarek, którego wynajęliśmy do prac remontowych w naszej łazience, okazał się prawdziwym artystą. Jego precyzja i zaangażowanie sprawiły, że efekt końcowy przeszedł nasze najśmielsze oczekiwania. Jesteśmy bardzo zadowoleni z jego pracy i polecamy go każdemu, kto szuka doświadczonego i profesjonalnego płytkarza.',
-  },
-  {
-    person: 'Krzysztof Król',
-    rating: 5,
-    html: 'Firma Abagard zrobiła świetny remont kuchni i salonu. Pan Jarek wymienił uszkodzoną kanalizację, położył płytki wielkoformatowe, nowe panele i nowe blaty. Wymienił elektrykę i zainstalował ledy. Naprawił fronty szafek kuchennych i zajął się malowaniem. To pierwszy fachowiec, w którego pracy nie znajduję wad. Robota została wykonana dobrze i w rozsądnej cenie, dlatego polecam każdemu.'
-  },
-  {
-    person: 'Łukasz Świrbutowicz',
-    rating: 5,
-    html: 'Polecam usługi pana Jarosława. Wykonał nasze kuchenne podłogi, był bardzo profesjonalny i punktualny. Praca przebiegła bezproblemowo i szybko, a efekt końcowy jest naprawdę imponujący. Jego ceny są bardzo rozsądne i polecamy go każdemu, kto szuka doświadczonego i godnego zaufania specjalistę.'
-  },
-]
+import Rating from "../partials/Rating.astro";
+import Reviews from "../../libs/reviews.json";
 ---
 <section class="py-16 lg:py-20 bg-white text-black">
   <div class="container mx-auto">
     <h2 class="mb-8 lg:mb-16 text-2xl lg:text-5xl font-bold text-center">Opinie klientów</h2>
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       {
-        data.map((el) => {
+        Reviews.map((el) => {
           return (
             <div class={`bg-gray-100 text-black p-8 shadow-md text-lg flex flex-col justify-between`}>
-              <p class="" set:html={el.html}></p>
+              <p class="" set:html={el.text}></p>
               <div class="mt-6">
                 <Rating value={el.rating} />
                 <p class="font-bold" set:html={el.person}></p>
+                <p class="font-normal text-sm text-gray-500">Źródło: <a href="https://maps.app.goo.gl/tcszzUV3zRTQbDXR7" target="_blank" rel="nofollow noopener noreferrer" class="hover:text-black">Google Maps</a></p>
               </div>
             </div>
           )

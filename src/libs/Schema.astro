@@ -1,0 +1,61 @@
+---
+import Reviews from "./reviews.json";
+
+const schemaCode = `
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Abagard.pl - płytki wielkoformatowe Poznań",
+    "image": [
+    ],
+    "telephone": "+48 888 124 560",
+    "email": "jaroslaw.boleslawski@gmail.com",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.4297602,
+      "longitude": 16.8535855
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dniestrańska 10",
+      "postalCode": "60-412",
+      "addressLocality": "Poznań",
+      "addressCountry": "PL"
+    },
+    "priceRange": "$$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "url": "https://abagard.pl/",
+    "review": ${
+      JSON.stringify(Reviews.map(review => ({
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": review.person,
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": review.rating,
+          "bestRating": "5"
+        },
+        "reviewBody": review.text
+      })))
+    }
+  }
+</script>`;
+---
+<Fragment set:html={schemaCode} />
+
